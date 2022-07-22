@@ -1,0 +1,33 @@
+{
+  "name": "e2e-case",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "e2e:test": "node puppeteer/launch.js",
+    "test": "jest --config=./jest.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer-core": "^15.4.2",
+    "ts-jest": "^28.0.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/expect-puppeteer": "^5.0.1",
+    "@types/jest": "^28.1.6",
+    "@types/jest-environment-puppeteer": "^5.0.2",
+    "@types/puppeteer": "^5.4.6",
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^28.1.3",
+    "jest": "^28.1.3",
+    "jest-environment-node": "^28.1.3",
+    "jest-puppeteer": "^6.1.1",
+    "puppeteer": "^15.4.2",
+    "typescript": "^4.7.4"
+  }
+}
