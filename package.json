@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "e2e:test": "node puppeteer/launch.js",
-    "test": "jest --config=./jest.config.js"
+    "e2e:test": "jest --config=./jest.config.js"
   },
   "keywords": [],
   "author": "",

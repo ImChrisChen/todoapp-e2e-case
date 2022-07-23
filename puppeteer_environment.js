@@ -7,8 +7,8 @@ const NodeEnvironment = require('jest-environment-node').default;
 const DIR = path.join(os.tmpdir(), 'jest_puppeteer_global_setup');
 
 class PuppeteerEnvironment extends NodeEnvironment {
-  constructor(config) {
-    super(config);
+  constructor(config, context) {
+    super(config, context);
   }
 
   async setup() {

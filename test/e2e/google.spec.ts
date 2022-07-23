@@ -1,9 +1,11 @@
+import {Page} from "puppeteer";
+
 const timeout = 5000;
 
 describe(
   '/ (Home Page)',
   () => {
-    let page;
+    let page: Page;
     beforeAll(async () => {
       page = await globalThis.__BROWSER_GLOBAL__.newPage();
       await page.goto('https://bilibili.com');
