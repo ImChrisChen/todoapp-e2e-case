@@ -5,11 +5,18 @@ const puppeteer = require('puppeteer');
 
 const DIR = path.join(os.tmpdir(), 'jest_puppeteer_global_setup');
 
+console.log('process.argv:',process.argv)
+
+console.log('process.env:',process.env)
+
+
 module.exports = async function () {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    headless: false
+  });
   // store the browser instance so we can teardown it later
   // this global is only available in the teardown but not in TestEnvironments
-  globalThis.__BROWSER_GLOBAL__ = browser;
+  globalThis.__BROWSER_GLOBAL__ = browser
 
   // use the file system to expose the wsEndpoint for TestEnvironments
   await mkdir(DIR, {recursive: true});

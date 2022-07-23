@@ -19,7 +19,7 @@ class PuppeteerEnvironment extends NodeEnvironment {
       throw new Error('wsEndpoint not found');
     }
 
-    // connect to puppeteer
+    // connect to app
     this.global.__BROWSER_GLOBAL__ = await puppeteer.connect({
       browserWSEndpoint: wsEndpoint,
     });
