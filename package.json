@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "e2e-test:todoapp": "cross-env app=todoapp && jest --config=./jest.config.js"
+    "e2e-test:todoapp": "jest --config=./jest.config.js --app=todoapp "
   },
   "keywords": [],
   "author": "",

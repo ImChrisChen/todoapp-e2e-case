@@ -4,12 +4,6 @@ const path = require('path');
 const puppeteer = require('puppeteer');
 
 const DIR = path.join(os.tmpdir(), 'jest_puppeteer_global_setup');
-
-console.log('process.argv:',process.argv)
-
-console.log('process.env:',process.env)
-
-
 module.exports = async function () {
   const browser = await puppeteer.launch({
     headless: false
